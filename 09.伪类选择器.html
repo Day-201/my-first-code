@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+
+        h1{
+            color: red;
+        }
+        /* 选中被鼠标悬浮的h1标签 */
+        h1:hover{
+            color: blue;
+        }
+        
+        .box1:hover{
+            color: red;
+            font-size: 100px;
+        }
+
+        /* :nth-child()跟据指定的数字选中某个父元素下的第几个子元素 */
+        .box2 p:nth-child(1){
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>hello</h1>
+    <h1>hello</h1>
+    <h1>hello</h1>
+    <h1>hello</h1>
+    <h1>hello</h1>
+    <p class="box1">world</p>
+    <p class="box1">world</p>
+    <p class="box1">world</p>
+    <p>world</p>
+    <p>world</p>
+    <p>world</p>
+    <p>world</p>
+    <div class="box2">
+        <p>ppppppppp</p>
+        <p>ppppppppp</p>
+        <p>ppppppppp</p>
+        <p>ppppppppp</p>
+    </div>
+</body>
+</html>

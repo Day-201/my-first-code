@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 图片标签 -->
+     <!-- < src="./day02/imimgages/头像.png" > -->
+    <!-- <img src="day02/imimgages/头像.png" > -->
+     <!-- <img src="https://img0.baidu.com/it/u=1282854145,3709198471&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=667" alt=""> -->
+      
+     <!-- 
+        文件路径：
+            1.相对路径（重点）：
+                ./ 表示从当前目录中查找,./不能叠加
+                ../ 表示从上一目录中查找,./能叠加
+            2.绝对路径（了解）：以头像为例子
+                C:\Users\14701\Desktop\项目文件夹\day02\images
+            3.网络路径：
+                https://img0.baidu.com/it/u=1282854145,3709198471&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=667
+                -->
+
+    <!-- <img src="./images/头像.pn" alt="这是一个头像 "> -->
+     <!-- alt是图片加载不了时进行说明文本的属性 -->
+
+    <!-- <img src="./images/头像.png" width="100px" height="200px"> -->
+    <!-- width是宽度的属性 默认单位像素（px)
+     height是高度的属性-->
+     <!-- <img src="./images/头像.png" title="这是一个头像" > -->
+
+     <!-- 
+        title说明：提示文本，当鼠标悬停时，才显示的文本 -->
+
+        <!-- 图片是一个行内标签,不会自动换行 -->
+
+        <!-- 视频标签 -->
+
+    <!-- <video src="../../媒体播放器 2026-07-07 14-11-49.mp4" controls title="这是一个视频"></video> --> 
+    <!-- 光有video属性是无法播放视频,需要加上controls属性才行 -->
+     <!-- <video src="../../媒体播放器 2026-07-07 14-11-49.mp4" controls loop></video> -->
+    <!-- loop是循环播放视频的属性 -->
+    <!-- <video src="../../媒体播放器 2026-07-07 14-11-49.mp4" controls muted></video> -->
+     <!-- muted是规定将视频的音频输出静音 -->
+      <!-- <video src="../../媒体播放器 2026-07-07 14-11-49.mp4" controls autoplay></video> -->
+    <!-- autoplay是指视频准备就绪后立即开始播放(自动播放),注意:谷歌浏览器不允许直接自动播放
+     需要先设置muted静音才行 -->
+
+    <!-- 视频标签是一个行内标签,不会自动换行 -->
+
+    <!-- 音频标签 -->
+     <!-- <audio src=""></audio> -->
+    <!-- 有三个属性
+        1.src：指定视频文件路径
+        2.controls：开启音频（跟视频属性一样）
+        3.loop：循环播放音频
+        4，muted：将音频输出为静音 -->
+        <!-- 音频标签是一个行内标签，不会自动换行 -->
+
+    <!-- 链接标签 -->
+    <!-- <a href="../day01/day01.html" target="_blankS">搜狗一下</a> -->
+    <!-- target有两种属性
+        1._self：默认值，在当前窗口中跳转
+        2._blank:在新窗口中跳转  -->
+    <!-- <h1>hello</h1> -->
+    <!-- <h1>hello</h1> -->
+    <!-- <h1>hello</h1> -->
+    <!-- <a href="#">回到顶部</a> -->
+    <!-- #是用于还没想好该链接哪里的属性
+        隐藏属性：点击后返回顶部 -->
+
+        <!-- 表格标签 -->
+         <!-- border表示边框：后面表示像素 -->
+        <table border="1">
+            <!-- tr表示行 -->
+             <tr>
+                <!-- th表示格头中的格子  自带加粗效果 -->
+                 <th>姓名</th>
+                 <th>年龄</th>
+                 <th>性别</th>
+             </tr>
+             <tr>
+                <!-- td表示格子 -->
+                <td>张三</td>
+                <td>19</td>
+                <td>男</td>
+             </tr>
+             <tr>
+                <td>张三</td>
+                <td>19</td>
+                <td>男</td>
+             </tr>
+             <tr>
+                <td>张三</td>
+                <td>19</td>
+                <td>男</td>
+             </tr>
+        </table>
+
+
+</body>
+</html>

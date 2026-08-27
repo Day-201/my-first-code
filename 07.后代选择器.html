@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 后代选择器:格式:A B(A和B都是指任意的选择器中间的空格才是指
+        后代选择器,选中的就是A的后代B) */
+        .box1 h1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+     <h1>hello</h1>
+    <h1>hello</h1>
+    <h1>hello</h1>
+    <p>world</p>
+    <p>world</p>
+    <p>world</p>
+    <div class="box1">
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <p>world</p>
+        <p>world</p>
+        <p>world</p>
+        <p>world</p>
+        <p>world</p>
+        <div class="box2">
+            <h1>hello</h1>
+            <h1>hello</h1>
+            <p>world</p>
+            <p>world</p>
+            <p>world</p>
+            <p>world</p>
+            <p>world</p>
+        </div>
+    </div>
+</body>
+</html>

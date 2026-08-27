@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 子代选择器:格式:A>B(A和B都是指任意的选择器中间的>才是指
+        子代选择器,选中的就是A的子代B) */
+        .box1>h1{
+            color: red;
+        }
+
+        .box1>.box3{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+   <h1>hello</h1>
+   <h1>hello</h1>
+   <h1>hello</h1>
+   <p>world</p>
+   <p>world</p>
+   <p>world</p>
+   <div class="box1">
+        <h1>hello</h1>
+        <h1 class="box3">hello</h1>
+        <p>world</p>
+        <p>world</p>
+        <p>world</p>
+        <p>world</p>
+        <p class="box3">world</p>
+        <div class="box2">
+            <h1>hello</h1>
+            <h1>hello</h1>
+            <p>world</p>
+            <p>world</p>
+            <p>world</p>
+            <p>world</p>
+            <p>world</p>
+        </div>
+    </div>
+</body>
+</html>

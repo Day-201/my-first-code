@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* font-weight是字体粗细的标签,有
+        bold:加粗
+        normal:正常两种属性*/
+        .box1{
+            font-weight: normal;
+        /* font-size是调整字体大小,谷歌默认大小为16px
+        在取值大小时,必须带有单位才行 */
+            font-size: 100px;
+        }
+
+        .box2{
+            text-indent: 2em;
+            /* 2em指的是当前标签字体大小的两倍 */
+
+            /* line-height是行高的属性,行高指的是上间距和文本高度和下间距和起来的高度 */
+            line-height: 70px;
+        }
+
+        .box3{
+            background-color: red;
+            /* 属性名:text-align:  ;是文本水平位置的意思
+            有三个取值:
+                    1.left左对齐
+                    2.center居中对齐
+                    3.right右对齐 */
+            text-align: center;
+        }
+
+        .box4{
+            text-align: center;
+        }
+
+        .box5{
+            /* text-decoration是文本修饰的属性
+            取值:
+                1.underline下划线
+                2.line-through删除线
+                3.overline上划线
+                4.none无装饰线(默认值)*/
+            text-decoration: underline;
+        }
+
+        a{
+            /* 常见使用场景:把链接标签下划线去除 */
+            text-decoration: none;
+        }
+        
+        .box6{
+            background-color: pink;
+            width: 500px;
+            height: 200px;
+            
+            /* 当行高与标签的高度相同时是垂直居中 */
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <p class="box1">字体样式</p>
+    
+    <p class="box2">文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进</p>
+
+    <p class="box3">文本水平居中</p>
+    <!-- 
+        浏览器会将行内标签当成文本来处理
+     -->
+    <div class="box4">
+        123
+        <button>按钮</button>
+        <input type="text">
+        <a href="">123</a>
+        <!-- span是一个行内标签,用来存放普通文本 -->
+         <span>文本标签</span>
+    </div>
+    
+
+
+    <p class="box5">段落段落段落段落段落段落段落段落段落段落段落</p>
+    <a href="#">百度一下</a>
+
+    <div class="box6">
+        这是一段文本
+    </div>
+</body>
+</html>
