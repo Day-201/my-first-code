@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: pink;
+            /* 内容区域的大小设置 */
+            width: 100px;
+            height: 100px;
+
+            /* 边框区域的设置 */
+            /* border是边框属性
+                border:宽度 边框样式 颜色每个值要空格隔开
+                solid实线边框 */
+
+                /* 注意: 默认情况下, 边框会导致盒子撑大 */
+                border: 10px solid black;
+                
+
+                /* 分别设置边框的四条边 */
+                /* border-后跟上下左右任意方向就可以分别设计四条边 */
+                /* border-left: 10px solid red;
+                border-top: 30px solid red;
+                border-bottom: 40px solid red;
+                border-right: 20px solid red; */
+
+                /* 内边距的设置(用于控制内容与边框的距离)
+                    注意: 默认情况下,边框会导致盒子撑大
+                */
+                /* padding: 110px; 在padding这个属性里可以写多个值*/
+                /* 第一个是给上面,第二个是给右边,第三个是给下边,第四个是给做左边
+                    按照顺时针的方向给的 */
+                 /* 假如给的数据不全只有三个，那就哪边没有看对面就行了 */
+                /* padding: 10px 20px 30px 40px; */
+            /* padding: 20px 10px 30px;         */
+            
+            /* 分别设置四个内边距 */
+            /* padding-top: 20px;
+            padding-left: 10px;
+            padding-bottom: 30px;
+            padding-right: 40px; */
+
+            /* 外边距设置 */
+            /* 外边距不会撑大盒子，因为就没有在盒子里面 
+                注意：当两个盒子垂直排列时，盒子上下的外边距会进行重叠
+                水平排列时是不会重叠的
+                    在margin这个属性里可以写多个值
+                    第一个是给上面,第二个是给右边,第三个是给下边,第四个是给做左边
+                    按照顺时针的方向给的 
+                    假如给的数据不全只有三个，那就哪边没有看对面就行了*/
+
+            /* margin: 200px; */
+            
+        }
+
+        button{
+            /* 去除边框 */
+            /* border: none; */
+            /* margin: 200px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        绝对是解放拉萨快来解放昆仑山JFK楼市房价
+    </div>
+
+    <!-- <div class="box">
+        绝对是解放拉萨快来解放昆仑山JFK楼市房价
+    </div>
+    <button>复原</button>
+    <button>复原</button> -->
+</body>
+</html>

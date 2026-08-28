@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            /* 盒子的计算方式 */
+
+            /* box-sizing属性可以改变盒子大小的计算方式
+            有两个常见的取值：
+                    content-box：这是默认值，盒子最终呈现的大小=（width.height属性设置的大小）+边框大小+内边距大小
+                    border-box: 盒子最终呈现的大小=width，height属性设置的大小 */
+            /* box-sizing: border-box;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            border: 10px solid red;
+            padding: 10px; */
+
+            /* 盒子的显示方式 
+                display属性控制元素如何显示在页面上常见取值:(block.inline-block,inline,none)
+                block:将元素显示为块级标签(元素会独占一行),宽度默认是其父元素的100%
+                inline: 将元素显示为行内元素(元素会在一行内显示,不会换行), 宽度和高度由内容决定,无法设置宽度和高度,
+                只能设置内边距和水平方向的外边距
+                (常用)inline-block:将元素显示为行内块级元素,与块级元素相同且能够被当成文本处理
+                (常用)none:将元素隐藏,即元素在页面中消失*/
+                
+
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .box3{
+            background-color: pink;
+        }
+        span{
+            background-color: blue;
+            /* 修改为块级元素 */
+            /* display: block; */
+            width: 20px;
+            height: 30px;
+            padding: 30px;
+            margin: 40px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box">box</div> -->
+
+    <!-- div之所以是块级元素,底层逻辑就是浏览器默认给他加了一个
+     display: block; -->
+    <!-- <div class="box1">
+        <div class="box3">
+            box
+        </div>
+    </div> -->
+
+    <span>span</span>
+    <br>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+</body>
+</html>

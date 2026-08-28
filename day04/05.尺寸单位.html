@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 尺寸单位 */
+
+        /* 单位：
+                %:百分比的参照物是父元素，如果元素脱离了标准文档流，那么参照的就是定位的参照物
+                vw：参照物是浏览器的视口宽度
+                vh：参照物是浏览器的视口高度
+        */
+        .box{
+            width: 50%;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .father{
+            width: 600px;
+            height: 600px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+      <div class="father">
+        <div class="box">box</div>
+      </div>
+</body>
+</html>

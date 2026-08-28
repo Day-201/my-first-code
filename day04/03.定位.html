@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 
+            脱离标准文档流有哪些现象:
+                1.不会在标准文档中占位置
+                2.盒子的默认宽度会消失
+            
+            所有定位后的盒子，比正常盒子的显示优先级都要高
+        */
+
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /* 1.固定定位
+                会不会脱离标准文档流: 会
+                参照物是谁: 浏览器当前窗口
+                使用场景:悬浮广告,悬浮按钮,悬浮菜单
+            */
+
+            /* position:是定位属性,是固定定位 */
+            /* position: fixed; */
+
+            /* 开启定位后的元素通过
+                left
+                right
+                top
+                bottom
+                进行移动,水平垂直方向各选一个使用即可 */
+            /* top: 10px; */
+
+            /* 2.相对定位
+                会不会脱离标准文档流: 不会，原本的位置依旧会占据标准文档流的位置
+                参照物是谁: 自己原本的位置
+                使用场景: 一般配合着绝对定位使用（子绝父相）
+            */
+            /* position: relative;
+            top: 20px; */
+
+             /* 3.绝对定位（有点难）
+                会不会脱离标准文档流:  会
+                参照物是谁: 
+                    1.离自己最近且开启过定位的祖先元素
+                    2.如果没有开启过定位的祖先元素，那么才会根据浏览器移动
+                使用场景: 根据祖先元素进行移动
+
+                子绝父相：
+                    当父元素不想脱离文档
+                    儿子又想根据父元素移动
+            */
+
+            position: absolute;
+
+            bottom: 0px;
+            right: 0px;
+        }
+
+        .father{
+            width: 400px;
+            height: 400px;
+            background-color: red;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <h1>标准文档流</h1>
+    <h1>标准文档流</h1>
+    <h1>标准文档流</h1>
+    <h1>标准文档流</h1>
+    <h1>标准文档流</h1>
+    <h1>标准文档流333333</h1>
+    <div class="father">
+        <div class="box">box</div>
+    </div>
+    <h1>标准文档流</h1>
+    <h1>标准文档流</h1>
+    <h1>标准文档流</h1>
+    <h1>标准文档流</h1>
+    <h1>标准文档流</h1>
+    <h1>标准文档流</h1>
+    <h1>标准文档流</h1>
+    <h1>标准文档流</h1>
+
+</body>
+</html>
