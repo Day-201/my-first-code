@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 3px solid red;
+            width: 500px;
+            height: 500px;
+            overflow: auto;
+
+            /* background-image是盒子背景的属性 
+                url()括号里填路径
+            */
+
+            /* 设置背景图 */
+            background-image: url(../作业4/main_bg.webp),url(../day02/images/头像.png);
+            /* 设置背景图是否重复
+                background-repeat
+                取值：repeat(默认值)：背景图在水平和垂直方向上重复
+                    no-repeat：背景图片不重复
+                    repeat-x：仅在水平方向重复
+                    repeat-y：仅在垂直方向重复
+            */
+            background-repeat: no-repeat, repeat;
+
+            /* 设置背景图大小 
+                background-size:是控制背景图片的尺寸属性
+                常见值：
+                    auto（默认值）：保持图片原始大小
+                    具体尺寸（如200px(宽) 100px(高）：设置宽度和高度
+                    百分比（如50%(宽) 50%（高））：相对于容器的百分比
+                    关键字：
+                        cover：缩放图片以完全覆盖容器，可能会裁剪部分照片
+                        contain：缩放图片以完整显示在容器内，可能会留白                    
+            */
+            /* background-size: 200px 200px; */
+            background-size: 100% 50%,50% 50%
+            /* background-size: contain; */
+            /* background-size: cover; */
+
+            /* 背景图定位
+                background-position设置背景图片的位置(初始位置在左上角)
+                常见值：
+                    关键字：
+                        top，center，bottom（垂直方向）            
+                        left，center，right（水平方向）
+                    具体数值或百分比（如50px 100px或50% 100%）先是水平再是垂直
+                注意：必须写两个值，
+            */
+            /* background-position: 100px 10px; */
+            /* background-position: right bottom; */
+            background-position: center center ,top left;
+
+            /* 导入多张背景图:
+                在background-image里的url按一下逗号后再接一个url
+                同理,背景重复,背景大小,背景位置都可以写两份
+                写法跟导入多张背景图一致,以逗号分离,结尾不要忘记冒号
+            */
+
+
+
+        }
+    </style>
+</head>
+<body>
+    
+   <div class="box">
+        <h1>hello</h1>
+   </div>
+</body>
+</html>

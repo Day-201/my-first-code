@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 会继承的属性(通常是"文本相关"的)
+           不会继承的属性(通常是"盒子"布局相关"的) 
+        */
+
+        .box{
+            border: 2px solid red;
+            font-size: 20px;
+            color: red;
+        }
+        /* 如果不想继承的话可以在子元素里单独添加一个样式去进行对上一个同样样式的覆盖 */
+
+        span{
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        父元素
+        <span>子元素</span>
+    </div>
+</body>
+</html>
