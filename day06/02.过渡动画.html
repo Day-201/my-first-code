@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 200px;
+            background-color: pink;
+            /* 过度动画 */
+            /* transition: property duration timing-function delay;
+                property:需要过度的css属性(如color width transform)
+                duration:过度持续时间(如0.5s表示0.5秒)
+                timing-function:过度的速度曲线(如ease(先慢后快再慢),linear(匀速),ease-in-out)
+                delay:过度延迟时间(可选,默认为0s)
+            */
+
+            /* 自定义属性:
+                 在网站https://cubic-bezier.tupulin.com/里进行调式后复制粘贴在timing-function的位置上   
+            */
+            /* transition: width 1s ease; */
+            /* 多属性的过度
+                在属性与属性之间用逗号隔开 */
+            /* transition: width 1s ease, height 1s ease; 
+                或者用all,all包含了所有的变化属性
+            */
+
+        }
+
+        .box:hover{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

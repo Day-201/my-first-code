@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 进行2D的转换
+            transform是css中将元素进行2D或3D转换的属性
+        */
+        /* 平移(translate) 将元素沿x轴和y轴移动,根据自身原本位置进行移动 
+            取值:第一个是水平移动值,第二个是垂直移动值    
+
+            缩放scale()括号里写缩放的倍数,大于1是放大,小于1是缩小,放大或缩小之后,不会对周围的内容进行影响
+            transform:scale(2);
+
+            旋转rotate()括号里写旋转了多少度要带单位
+            transform:rotate(180deg);  deg就是度的单位
+        */
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            transform: translate(100px,0px);
+        }
+    </style>
+</head>
+<body>
+    <h1>正常文档流</h1>
+    <h1>正常文档流</h1>
+    <h1>正常文档流</h1>
+    <h1>正常文档流</h1>
+    <h1>正常文档流</h1>
+    <h1>正常文档流</h1>
+    <h1>正常文档流</h1>
+    <div class="box">box</div>
+    <h1>正常文档流</h1>
+    <h1>正常文档流</h1>
+    <h1>正常文档流</h1>
+    <h1>正常文档流</h1>
+    <h1>正常文档流</h1>
+    <h1>正常文档流</h1>
+    <h1>正常文档流</h1>
+    <h1>正常文档流</h1>
+    <h1>正常文档流</h1>
+</body>
+</html>

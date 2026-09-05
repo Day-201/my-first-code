@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Flexbox的基本结构
+            容器:就是设置了display:flex的元素
+            项目:就是上述容器内的直接子元素(切记是子元素,孙子元素那些不算)    
+            容器又分为有主轴和副轴
+                主轴:用来控制项目的排列方向(默认为从左往右,且主轴与副轴方向相同时,副轴会跑到主轴原来的位置)
+
+                flex-direction定义主轴的方向(也就是子元素的排列方向)
+                可选值:
+                    row:默认,子元素沿水平方向从左到右排列
+                    Column:子元素沿垂直方向从上到下排列
+                    row-reverse:子元素沿水平方向从右到左排列
+                    column-reverse:子元素沿垂直方向从右到左排列
+
+                justify-content是定义主轴上的对齐方式
+                可选值:
+                    flex-start默认,起点对齐
+                    flex-end子元素向主轴终点对齐
+                    center子元素在主轴上居中对齐
+                    space-between子元素之间的间距相等,首尾子元素分别紧贴主轴的起点和终点
+                    space-around:每个子元素周围的间距相等
+                    space-evenly:每个子元素之间的间距以及子元素与容器边缘的间距完全相等
+
+                副轴:跟主轴一样,又称交叉轴(默认从上往下)
+
+                 改变交叉轴(副轴)上的对齐方式
+                 align-items定义交叉轴上的对齐方式
+                可选值:
+                stretch:默认,子元素在交叉轴方向上拉伸以填满容器
+                flex-start:子元素在交叉轴的起点对齐
+                flex-end:子元素在交叉轴的终点对齐
+                center:子元素在交叉轴上居中对齐
+                baseline:在元素在交叉轴上按基线对齐
+            */
+        
+        
+        
+        .box{
+            border: 10px solid red;
+            /* 开启flex布局 */
+            display: flex;
+            /* 改变主轴方向 */
+            /* flex-direction: row-reverse; */
+            /* justify-content: end; */
+            /* justify-content: space-around; */
+
+            /* flex-wrap定义子项目是否换行 */
+            /* flex-wrap: wrap; */
+
+            /* 设置子项目与子项目之间的间距
+                gap有两个值,第一个是行间距,第二个是列间距
+            */
+            /* gap:10px  30px*/
+            }
+
+
+        .item{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            text-align: center;
+            line-height: 100px; 
+        }
+
+        /* 子项属性
+            flex-grow定义子元素在主轴方向上的扩展比列
+        */
+        .box .item:nth-child(2){
+            /* 设置子项目瓜分父容器剩余空间 */
+            /* flex-grow: 1; */
+
+            /* flex-shrink定义子元素在主轴上位置不足时是否收缩
+                0是不收缩
+            */
+            /* flex-shrink: 0; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item6</div>
+        <div class="item">item5</div>
+        <div class="item">item4</div>
+        <div class="item">item3</div>
+    </div>
+</body>
+</html>
