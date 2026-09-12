@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:wght@400;500&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* 导航栏 */
+/* .big_box{
+    width: 1440px;
+    height: 900px;
+    background-color: pink;
+} */
+
+.app{
+    position: relative;
+}
+.guidance{
+    background-color: red;
+    width: 1440px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.guidance_text{
+    margin-right: auto;
+}
+
+.favicon{
+    width: 18px;
+    height: auto;
+}
+button{
+    border: none;
+    background-color: red;
+    cursor: pointer;
+}
+
+/* 左边大盒子 */
+.middle_box{
+    background-color: green;
+    width: 1440px;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+.left_text{
+    background-color: pink;
+    flex-grow: 1;
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.left_title{
+    font-size: 53px;
+    font-weight: bold;
+}
+.left_paragraph{
+    line-height: 26px;
+}
+/* 右边四个盒子 */
+.right_box{
+    background-color: yellow;
+    height: 700px;
+    width: 48%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box1{
+    flex-grow: 1;
+    background-color: aqua;
+    width: 50%;
+}
+.box2{
+    flex-grow: 1;
+    background-color: rgb(255, 0, 204);
+    width: 50%;
+}
+.box3{
+    flex-grow: 1;
+    background-color: rgb(255, 183, 0);
+    width: 50%;
+}
+.box4{
+    flex-grow: 1;
+    background-color: rgb(255, 0, 76);
+    width: 50%;
+}
+.bottom_box{
+    background-color: aquamarine;
+    width: 1440px;
+    height: 50px;
+}
+/* 隐藏的菜单 */
+/* .hide_box{
+    background-color: blueviolet;
+    position: absolute;
+    width: 320px;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    padding: 50px;
+
+}
+
+button:hover{
+    transform: translate(1);
+} */
+  
+    
